@@ -1,88 +1,171 @@
-  * {
-    margin: 0;
-    padding: 0;
-  }
+/* TODO: add reset.css suff */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  /* Header */
+/* Header */
+#logo {
+  height: 64px;
+  border: 1px solid black;
+  /* flex items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #logo {
-    height: 64px;
-    border: 1px solid black;
+#title {
+  /* flex items */
+  display: flex;
+  align-items: center;
+}
 
-    /* flex items */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+#logo-image {
+  height: 32px;
+  margin-left: 24px;
+  margin-right: 5px;
+}
 
-  #title {
+#logo-image img {
+  height: 32px;
+}
 
-    /* flex items */
-    display: flex;
-    align-items: center;
-  }
+#title-two {
+  font-size: 22.8px;
+  color: grey;
+}
 
-  #logo-image  {
-    height: 32px;
-    margin-left: 24px;
-    margin-right: 5px;
-  }
+nav {
+  padding-right: 8px;
+}
 
-  #logo-image img {
-    height: 32px;
-  }
+a {
+  font-size: 22.8px;
+  color: black;
+  text-decoration: none;
+  margin-right: 16px;
+}
 
-  #title-two {
-    font-size: 22.8px;
-    color: grey;
-  }
+/* Start Here Section */
+#main-banner {
+  background-color: #b7bbb8;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 
-  nav {
-    padding-right: 8px;
+.banner-image {
+  width: 60%;
+  padding: 32px 24px;
+}
 
-  }
+.banner-image img {
+  width: 100%;
+}
 
-  a {
-    font-size: 22.8px;
-    color: black;
-    text-decoration: none;
-    margin-right: 16px;
-  }
+.headline {
+  font-family: helvetica;
+  width: 40%;
 
-  /* Start Here Section */
+  /* TODO: 1. find a font size that matches.
+  2. find a width for this container */
+}
 
-  #main-banner {
-    display: flex;
-    align-items: center;
-    align-content: center;
-  }
+.headline h1 {
+  font-size: 55px;
+  padding-bottom: 20px;
+}
 
-  #main-banner img {
-    width: 60%;
-    padding-left: 24px;
-  }
+.headline p {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
 
-  .headline h1 {
-    font-size: 50px;
-    padding-bottom: 20px;
-  }
+#main-headline #banner-image {
+  width: 100%;
+}
 
-  .headline p {
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
 
-  #button {
-    font-size: 30px;
-    /* margin: 8px 0 8x 0; */
-    border: 1px solid black;
-    color: white;
-    background-color: grey;
-  }
+#button {
+  font-size: 30px;
+  /* margin: 8px 0 8x 0; */
+  border: 1px solid black;
+  color: white;
+  background-color: grey;
+}
 
-  /* School Info */
 
-  #school-info {
-    display: flex;
-    flex-direction: row;
-  }
+
+/* School Info */ /* TODO: Align headlin-news image with main school banner image. */
+
+#school-info {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+#school-info h1 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+#headline-news {
+  width: 40%;
+  border: 1px solid black;
+}
+
+.info {
+display: flex;
+align-items: center;
+}
+
+.info img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+
+.info div {
+  width: 65%;
+  /* padding-left: 20px; */
+}
+
+.info h3 {
+  padding-bottom: 8px;
+}
+
+.info p {
+  padding-bottom: 8px;
+}
+
+.info span {
+  color: blue;
+}
+
+/* School Courses */
+
+#courses {
+  width: 100%;
+  margin: 0 72px;
+}
+
+#courses h2 {
+  text-align: center;
+  padding: 32px 0;
+}
+#course-titles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-info {
+  width: 25%;
+  padding: 32px;
+}
+
+.course-info img {
+  width: 100%;
+  height: auto;
+}
