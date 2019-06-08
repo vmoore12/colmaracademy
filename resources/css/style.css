@@ -169,3 +169,56 @@ align-items: center;
   width: 100%;
   height: auto;
 }
+
+.course-info h3 {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.course-info span {
+  padding-top: 8px;
+}
+
+.course-info p {
+  padding-top: 8px;
+}
+
+/* Thesis */
+
+#thesis {
+  margin-left: 24px;
+  display: flex;
+}
+
+#thesis {
+  width: ;
+}
+
+.main-thesis {
+  width: 60%;
+}
+
+.main-thesis video {
+  width: 100%;
+}
+
+#thesis-news {
+  width: 40%;
+  margin-left: 24px;
+}
+
+.exhibit {
+  display: flex;
+}
+
+.exhibit img {
+  width: 35%;
+  padding: 16px;
+
+}
+
+.exhibit div {
+  width: 65%;
+  padding-left: 16px;
+  align-items: center;
+}
