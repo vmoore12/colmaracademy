@@ -186,12 +186,13 @@ align-items: center;
 /* Thesis */
 
 #thesis {
+  padding-bottom: 32px;
   margin-left: 24px;
   display: flex;
 }
 
 #thesis {
-  width: ;
+
 }
 
 .main-thesis {
@@ -200,6 +201,10 @@ align-items: center;
 
 .main-thesis video {
   width: 100%;
+  padding-bottom: 24px;
+}
+.main-thesis h1 {
+  padding-bottom: 8px;
 }
 
 #thesis-news {
@@ -220,5 +225,25 @@ align-items: center;
 .exhibit div {
   width: 65%;
   padding-left: 16px;
+}
+
+#thesis-news div {
   align-items: center;
+}
+
+div h3 {
+  padding-bottom: 8px;
+}
+
+/* Footer */
+
+footer {
+  padding: 16px;
+  margin-bottom: 50px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  padding-left: 24px;
 }
