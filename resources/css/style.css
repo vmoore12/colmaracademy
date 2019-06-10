@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto Slab";
+}
+
 /* Header */
 #logo {
   height: 64px;
@@ -21,13 +25,12 @@
 }
 
 #logo-image {
-  height: 32px;
   margin-left: 24px;
   margin-right: 5px;
 }
 
 #logo-image img {
-  height: 32px;
+  height: 42px;
 }
 
 #title-two {
@@ -62,10 +65,15 @@ a {
 .banner-image img {
   width: 100%;
 }
+#school-info .banner-image span {
+  display: flex;
+  padding: 32px 0;
+}
 
 .headline {
-  font-family: helvetica;
-  width: 40%;
+  /* font-family: helvetica; */
+  width: 29%;
+  padding-right: 13%;
 
   /* TODO: 1. find a font size that matches.
   2. find a width for this container */
@@ -81,19 +89,17 @@ a {
   padding-bottom: 20px;
 }
 
-#main-headline #banner-image {
-  width: 100%;
-}
-
-
 #button {
-  font-size: 30px;
+  font-size: 24px;
+  width: 100%
   /* margin: 8px 0 8x 0; */
   border: 1px solid black;
   color: white;
   background-color: grey;
-}
 
+  display: flex;
+  justify-content: center;
+}
 
 
 /* School Info */ /* TODO: Align headlin-news image with main school banner image. */
@@ -110,12 +116,18 @@ a {
   padding-bottom: 24px;
 }
 
+#school-info span {
+  margin-top: 32px;
+}
+
 #headline-news {
   width: 40%;
-  border: 1px solid black;
+  margin-top: 16px;
 }
 
 .info {
+  margin-bottom: 3px;
+  border: 1px solid grey;
 display: flex;
 align-items: center;
 }
@@ -148,7 +160,9 @@ align-items: center;
 
 #courses {
   width: 100%;
-  margin: 0 72px;
+  padding-bottom: 32px;
+  background-color: grey
+
 }
 
 #courses h2 {
@@ -156,13 +170,16 @@ align-items: center;
   padding: 32px 0;
 }
 #course-titles {
+  margin: 0 56px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .course-info {
-  width: 25%;
-  padding: 32px;
+  width: 31%;
+  margin: 16px;
+  background-color: white;
 }
 
 .course-info img {
@@ -186,6 +203,7 @@ align-items: center;
 /* Thesis */
 
 #thesis {
+  padding-top: 32px;
   padding-bottom: 32px;
   margin-left: 24px;
   display: flex;
@@ -246,4 +264,8 @@ footer {
 }
 .footer {
   padding-left: 24px;
+}
+
+footer span:first-child {
+  padding-right: 5px;
 }
