@@ -1,4 +1,5 @@
-/* TODO: add reset.css suff */
+/* Universal Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +29,7 @@ p, span {
 header {
     height: 64px;
     border: 1px solid black;
+
     /* flex items */
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,7 @@ header {
 }
 
 #title {
+
     /* flex items */
     display: flex;
     align-items: center;
@@ -54,7 +57,7 @@ header {
 }
 #title-two {
     font-size: 22.8px;
-    color: grey;
+    color: #b7bbb8;
 }
 
 nav {
@@ -73,8 +76,11 @@ a {
 }
 
 /* Start Here Section */
+
 #main-banner {
     background-color: #b7bbb8;
+
+    /* flex items */
     display: flex;
     align-items: center;
     align-content: center;
@@ -111,6 +117,8 @@ a {
     border: 1px solid black;
     color: white;
     background-color: grey;
+
+    /* flex items */
     display: flex;
     justify-content: center;
 }
@@ -119,9 +127,12 @@ a {
 
 #school-info {
     padding-top: 32px;
+    border: 1px solid black;
+
+    /* flex items */
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+
 }
 
 #school-info h1 {
@@ -141,6 +152,8 @@ a {
 .info {
     margin-bottom: 3px;
     border: 1px solid grey;
+
+    /* flex items */
     display: flex;
     align-items: center;
 }
@@ -164,7 +177,7 @@ a {
 }
 
 .info span {
-    color: blue;
+    color: #311be8;
 }
 
 /* School Courses */
@@ -261,6 +274,8 @@ footer {
     padding: 16px;
     margin-bottom: 50px;
     border-top: 1px solid black;
+
+    /* flex items */
     display: flex;
     justify-content: space-between;
 }
@@ -277,6 +292,8 @@ footer span:first-child {
 @media only screen and (min-width: 500px) {
     #course-titles {
         margin: 0 56px;
+
+        /* flex items */
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -285,7 +302,7 @@ footer span:first-child {
     .course-info {
         width: 30%;
         margin: 16px;
-        background-color: white;
+        background-color: #ffffff;
     }
 
     .info .mobile-image {
