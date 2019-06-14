@@ -1,271 +1,436 @@
 /* TODO: add reset.css suff */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Roboto Slab";
+    font-family: "Roboto Slab";
+}
+
+h1 {
+    font-size: 63px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p, span {
+    font-size: 25px;
 }
 
 /* Header */
-#logo {
-  height: 64px;
-  border: 1px solid black;
-  /* flex items */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+    height: 64px;
+    border: 1px solid black;
+    /* flex items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #title {
-  /* flex items */
-  display: flex;
-  align-items: center;
+    /* flex items */
+    display: flex;
+    align-items: center;
 }
 
 #logo-image {
-  margin-left: 24px;
-  margin-right: 5px;
+    margin-left: 24px;
+    margin-right: 5px;
 }
 
 #logo-image img {
-  height: 42px;
+    height: 42px;
 }
 
+#title h2 {
+    font-size: 24px;
+}
 #title-two {
-  font-size: 22.8px;
-  color: grey;
+    font-size: 22.8px;
+    color: grey;
 }
 
 nav {
-  padding-right: 8px;
+    padding-right: 8px;
+}
+
+nav a img {
+    display: none;
 }
 
 a {
-  font-size: 22.8px;
-  color: black;
-  text-decoration: none;
-  margin-right: 16px;
+    font-size: 22.8px;
+    color: black;
+    text-decoration: none;
+    margin-right: 16px;
 }
 
 /* Start Here Section */
 #main-banner {
-  background-color: #b7bbb8;
-  display: flex;
-  align-items: center;
-  align-content: center;
+    background-color: #b7bbb8;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .banner-image {
-  width: 60%;
-  padding: 32px 24px;
+    width: 60%;
+    padding: 32px 24px;
 }
 
 .banner-image img {
-  width: 100%;
+    width: 100%;
 }
+
 #school-info .banner-image span {
-  display: flex;
-  padding: 32px 0;
+    display: flex;
+    padding: 32px 0;
 }
 
-.headline {
-  /* font-family: helvetica; */
-  width: 29%;
-  padding-right: 13%;
-
-  /* TODO: 1. find a font size that matches.
-  2. find a width for this container */
-}
 
 .headline h1 {
-  font-size: 55px;
-  padding-bottom: 20px;
+    line-height: 1.2;
+    padding-bottom: 20px;
 }
 
 .headline p {
-  font-size: 25px;
-  padding-bottom: 20px;
+    font-size: 41px;
+    padding-bottom: 20px;
 }
 
 #button {
-  font-size: 24px;
-  width: 100%
-  /* margin: 8px 0 8x 0; */
-  border: 1px solid black;
-  color: white;
-  background-color: grey;
-
-  display: flex;
-  justify-content: center;
+    font-size: 24px;
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
 }
 
-
-/* School Info */ /* TODO: Align headlin-news image with main school banner image. */
+/* School Info */
 
 #school-info {
-  padding-top: 32px;
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
 }
 
 #school-info h1 {
-  padding-top: 32px;
-  padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 24px;
 }
 
 #school-info span {
-  margin-top: 32px;
+    margin-top: 32px;
 }
 
 #headline-news {
-  width: 40%;
-  margin-top: 16px;
+    width: 40%;
+    margin-top: 16px;
 }
 
 .info {
-  margin-bottom: 3px;
-  border: 1px solid grey;
-display: flex;
-align-items: center;
+    margin-bottom: 3px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+
+.info:hover {
+    background: #b7bbb8;
 }
 
 .info img {
-  width: 35%;
-  height: auto;
-  padding: 16px;
-}
-
-
-.info div {
-  width: 65%;
-  /* padding-left: 20px; */
+    width: 35%;
+    height: auto;
+    padding: 16px;
 }
 
 .info h3 {
-  padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .info p {
-  padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .info span {
-  color: blue;
+    color: blue;
 }
 
 /* School Courses */
 
 #courses {
-  width: 100%;
-  padding-bottom: 32px;
-  background-color: grey
-
+    width: 100%;
+    padding-bottom: 32px;
+    background-color: #b7bbb8;
 }
 
 #courses h2 {
-  text-align: center;
-  padding: 32px 0;
-}
-#course-titles {
-  margin: 0 56px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.course-info {
-  width: 31%;
-  margin: 16px;
-  background-color: white;
+    text-align: center;
+    padding: 32px 0;
 }
 
 .course-info img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .course-info h3 {
-  padding-top: 16px;
-  padding-bottom: 8px;
+    margin-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 .course-info span {
-  padding-top: 8px;
+    margin-left: 16px;
+    padding-top: 8px;
 }
 
 .course-info p {
-  padding-top: 8px;
+    margin-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 24px;
 }
 
 /* Thesis */
 
 #thesis {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: 24px;
-  display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 24px;
+    display: flex;
 }
 
-#thesis {
-
+#thesis h2 {
+    display: none;
 }
 
 .main-thesis {
-  width: 60%;
+    width: 60%;
 }
 
 .main-thesis video {
-  width: 100%;
-  padding-bottom: 24px;
+    width: 100%;
+    padding-bottom: 24px;
 }
+
 .main-thesis h1 {
-  padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 #thesis-news {
-  width: 40%;
-  margin-left: 24px;
+    width: 40%;
+    margin-left: 24px;
 }
 
 .exhibit {
-  display: flex;
+    display: flex;
 }
 
 .exhibit img {
-  width: 35%;
-  padding: 16px;
-
+    width: 35%;
+    padding: 16px;
 }
 
 .exhibit div {
-  width: 65%;
-  padding-left: 16px;
+    width: 65%;
+    padding-left: 16px;
 }
 
 #thesis-news div {
-  align-items: center;
+    align-items: center;
 }
 
 div h3 {
-  padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 /* Footer */
 
 footer {
-  padding: 16px;
-  margin-bottom: 50px;
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 50px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 }
+
 .footer {
-  padding-left: 24px;
+    font-size: 24px;
+    padding-left: 24px;
 }
 
 footer span:first-child {
-  padding-right: 5px;
+    padding-right: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+    #course-titles {
+        margin: 0 56px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .course-info {
+        width: 30%;
+        margin: 16px;
+        background-color: white;
+    }
+
+    .info .mobile-image {
+        display: none;
+    }
+
+    .info div {
+        width: 65%;
+        /* padding-left: 20px; */
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 64px;
+    }
+
+    #title h2,
+    #title span {
+        display: none;
+    }
+
+    nav a span {
+        display: none;
+
+    }
+
+    nav a img {
+        display: inline-block;
+
+    }
+
+    #main-banner {
+        display: block;
+    }
+
+    .headline {
+        padding: 16px;
+    }
+
+    .headline #button {
+        padding: 8px 0;
+
+    }
+
+    .info img {
+        display: none;
+    }
+
+    .info .mobile-image {
+        display: block;
+        width: 93%;
+    }
+
+    .info div {
+        padding: 16px;
+    }
+
+    #school-info {
+        padding: 0;
+    }
+
+    #school-info .banner-image {
+        display: none;
+    }
+
+    #headline-news {
+        width: 100%;
+        margin: 0;
+    }
+
+    #headline-news .info {
+        display: block;
+        width: 100%;
+    }
+
+    #courses {
+        background: white;
+    }
+
+    #course-titles {
+        display: block;
+    }
+
+    .course-info {
+        padding: 16px;
+        margin: 4px 16px 0px;
+        background: #b7bbb8;
+    }
+
+    .course-info img,
+    .course-info span,
+    .course-info p {
+        display: none;
+    }
+
+    #thesis {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    #thesis > h2 {
+        display: block;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .main-thesis {
+        width: 100%;
+        padding: 0;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .main-thesis h1,
+    .main-thesis p {
+        display: none;
+    }
+
+    #thesis-news {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+    footer span {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #main-banner .banner-image {
+        width: 100%;
+        padding: 0
+    }
 }
